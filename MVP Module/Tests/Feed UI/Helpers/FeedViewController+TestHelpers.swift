@@ -6,6 +6,10 @@ import UIKit
 import MVP
 
 extension FeedViewController {
+	var errorMessage: String? {
+		return errorView?.message
+	}
+
 	func simulateUserInitiatedFeedReload() {
 		refreshControl?.simulatePullToRefresh()
 	}
